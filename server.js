@@ -6,7 +6,7 @@ dotEnv.config();
 const port = process.env.PORT || 3001;
 
 app.get("/", (req, res) => {
-  res.send("APLICAÇÃO ESTÁ RODANDO");
+  return res.send("APLICAÇÃO ESTÁ RODANDO");
 });
 
 if (process.env.NODE_ENV === "production") {
